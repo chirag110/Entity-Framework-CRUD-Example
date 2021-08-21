@@ -1,0 +1,24 @@
+﻿@model EntityFrameworkCRUDExample.Models.Employee
+<html>
+<head>
+    <title>Details</title>
+</head>
+<body>
+    <h1>Employees -Details</h1>
+    <table>
+        <tr>
+            <td>Emp ID:</td>
+            <td>@Model.EmpID</td>
+        </tr>
+        <tr>
+            <td>Emp Name:</td>
+            <td>@Model.EmpName</td>
+        </tr>
+        <tr>
+            <td>Salary:</td>
+            <td>@Model.Salary</td>
+        </tr>
+    </table>
+    <a href="/Home/Index">Back to list</a>
+</body>
+</html>

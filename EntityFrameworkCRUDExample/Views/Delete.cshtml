@@ -1,0 +1,31 @@
+﻿@model EntityFrameworkCRUDExample.Models.Employee
+<html>
+<head>
+    <title>Delete</title>
+</head>
+<body>
+    <h1>Employees -Delete</h1>
+    <form action="/Home/Delete/@Model.EmpID" method="post">
+        <h2>Are you sure to delete this employee?</h2>
+        <table>
+            <tr>
+                <td>Emp ID:</td>
+                <td>@Model.EmpID</td>
+            </tr>
+            <tr>
+                <td>Emp Name:</td>
+                <td>@Model.EmpName</td>
+            </tr>
+            <tr>
+                <td>Salary:</td>
+                <td>@Model.Salary</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><inputtype ="submit" value="Delete" /></td>
+            </tr>
+        </table>
+        <a href="/Home/Index">Back to list</a>
+    </form>
+</body>
+</html>

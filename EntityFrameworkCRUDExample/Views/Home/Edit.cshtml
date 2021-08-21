@@ -1,0 +1,30 @@
+﻿@model EntityFrameworkCRUDExample.Models.Employee
+<html>
+<head>
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Employees - Edit</h1>
+    <form action="/Home/Edit" method="post">
+        <table>
+            <tr>
+                <td>Emp ID:</td>
+                <td><input type ="text" name="EmpID" value="@Model.EmpID" readonly="readonly" /></td>
+            </tr>
+            <tr>
+                <td>Emp Name:</td>
+                <td><input type ="text" name="EmpName" value="@Model.EmpName" /></td>
+            </tr>
+            <tr>
+                <td>Salary:</td>
+                <td><input type ="text" name="Salary" value="@Model.Salary" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type ="submit" value="Update" /></td>
+            </tr>
+        </table>
+        <a href="/Home/Index">Back to list</a>
+    </form>
+</body>
+</html>
